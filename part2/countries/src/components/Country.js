@@ -6,7 +6,6 @@ const Country = ({ country, isShow }) => {
 
   useEffect(() => {
     countriesServices.getWeatherForecast(country).then((returnedWeather) => {
-      console.log(returnedWeather);
       setWeather(returnedWeather);
     });
   }, [country]);
